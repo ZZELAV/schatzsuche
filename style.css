@@ -517,28 +517,3 @@ h1 {
         font-size: 1.4em;
     }
 }
-
-.validate-btn {
-    width: 100%;
-    padding: 12px;
-    margin-top: 10px;
-    background: #2a5298;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-size: 1em;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.validate-btn:hover {
-    background: #1e3c72;
-}
-
-.validate-btn:active {
-    transform: scale(0.98);
-}
-
-.validate-btn.validated {
-    background: #28a745;
-}
