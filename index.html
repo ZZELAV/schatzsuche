@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Die Schatzsuche der sieben Sterne</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="stars"></div>
+
+    <div class="container" id="codeContainer">
+        <div class="treasure-box">
+            <h1>🌟 Die Schatzsuche der sieben Sterne 🌟</h1>
+            <p class="subtitle">Gebt die beiden geheimen Codes ein, um das Rätsel zu lösen!</p>
+
+            <div class="code-inputs">
+                <div class="code-group">
+                    <label for="code1">Erster Schlüssel (CODE 1)</label>
+                    <input type="tel" inputmode="numeric" pattern="[0-9]*" id="code1" maxlength="6" placeholder="000000"
+                        autocomplete="off">
+                    <button class="validate-btn" id="validateBtn1">✓ CODE 1 prüfen</button>
+                    <span class="status" id="status1"></span>
+                </div>
+
+                <div class="code-group">
+                    <label for="code2">Zweiter Schlüssel (CODE 2)</label>
+                    <input type="tel" inputmode="numeric" pattern="[0-9]*" id="code2" maxlength="6" placeholder="000000"
+                        autocomplete="off">
+                    <button class="validate-btn" id="validateBtn2">✓ CODE 2 prüfen</button>
+                    <span class="status" id="status2"></span>
+                </div>
+            </div>
+
+            <button id="submitBtn" class="submit-btn" disabled>🔓 Geheimnis lüften</button>
+
+            <p class="hint" id="hint"></p>
+        </div>
+    </div>
+
+    <div class="container hidden" id="revealContainer">
+        <div class="reveal-box">
+            <div class="celebration">🎉 🎊 ⛴️ 🌊 ☀️ 🎉 🎊</div>
+
+            <h1 class="reveal-title">Eure Mittelmeer-Kreuzfahrt!</h1>
+
+            <div class="trip-details">
+                <h2>📅 5. - 12. August 2026</h2>
+                <h3>8 Tage • 7 Nächte</h3>
+            </div>
+
+            <div class="route-container">
+                <h2 class="route-title">🗺️ Eure Route:</h2>
+
+                <div class="route-image-container">
+                    <img src="route.jpg" alt="Kreuzfahrt Route Karte" class="route-image">
+                </div>
+
+                <div class="route">
+                    <div class="port">
+                        <div class="port-number">⭐ 1</div>
+                        <div class="port-info">
+                            <h3>Genua (Genoa)</h3>
+                            <p>🇮🇹 Italien • Start der Reise</p>
+                        </div>
+                    </div>
+
+                    <div class="arrow">↓</div>
+
+                    <div class="port">
+                        <div class="port-number">⭐ 2</div>
+                        <div class="port-info">
+                            <h3>Marseille</h3>
+                            <p>🇫🇷 Frankreich • Provenzalische Perle</p>
+                        </div>
+                    </div>
+
+                    <div class="arrow">↓</div>
+
+                    <div class="port">
+                        <div class="port-number">⭐ 3</div>
+                        <div class="port-info">
+                            <h3>Tarragona</h3>
+                            <p>🇪🇸 Spanien • Römisches Erbe</p>
+                        </div>
+                    </div>
+
+                    <div class="arrow">↓</div>
+
+                    <div class="port">
+                        <div class="port-number">⭐ 4</div>
+                        <div class="port-info">
+                            <h3>Valencia</h3>
+                            <p>🇪🇸 Spanien • Stadt der Künste</p>
+                        </div>
+                    </div>
+
+                    <div class="arrow">↓</div>
+
+                    <div class="port">
+                        <div class="port-number">⭐ 5</div>
+                        <div class="port-info">
+                            <h3>Livorno</h3>
+                            <p>🇮🇹 Italien • Toskanische Küste</p>
+                        </div>
+                    </div>
+
+                    <div class="arrow">↓</div>
+
+                    <div class="port">
+                        <div class="port-number">⭐ 6</div>
+                        <div class="port-info">
+                            <h3>Civitavecchia</h3>
+                            <p>🇮🇹 Italien • Tor zu Rom</p>
+                        </div>
+                    </div>
+
+                    <div class="arrow">↓</div>
+
+                    <div class="port">
+                        <div class="port-number">⭐ 7</div>
+                        <div class="port-info">
+                            <h3>Genua (Genoa)</h3>
+                            <p>🇮🇹 Italien • Der Kreis schließt sich</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="final-message">
+                <h2>🎁 Alles Liebe zu eurem 50. Geburtstag! 🎁</h2>
+                <p>Eine unvergessliche Reise durchs Mittelmeer erwartet euch!</p>
+                <p class="tagline">⛴️ Lasst das Abenteuer beginnen! ⛴️</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
